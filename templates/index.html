@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <h2>Name: Supreetha Darbha</h2>
+    <h2>Student ID: 35242</h2>
+
+    <img alt="Photo: Curly" src="{{ url_for('static', filename='curly.png') }}">
+
+
+    <hr>
+    <h3>Query </h3>
+    <h4>
+        <!-- 1st Query -->
+        <h2>1) Search for height range</h2>
+        <form action="/form" method="get">
+        <label>
+            height 1:
+            <input type="text" name="fname1">
+        </label>
+        <label>
+            height 2:
+            <input type="text" name="fname2">
+        </label>
+        <br>
+        <input type="submit" value="submit">
+        </form>
+        <hr>
+
+        <form action="/display" method="get">
+        <h2>1) Show Name and pictures</h2>
+        <input type="submit" value="submit">
+        </form>
+
+</body>
+</html>
